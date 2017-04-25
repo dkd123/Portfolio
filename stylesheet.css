@@ -4,23 +4,34 @@ body{
 
 #header {
 	padding: 25px;
-	height: 250px;
-	background-image: url("header.jpg");
+	height: 180px;
+	background-image: url("images/header.jpg");
 	background-size: 100%;
 	margin: 0px;
 }
 
 #header img {
-	height: 250px;
+	height: 180px;
 	display: block;
 	margin: auto;
 }
 
 hr{
 	margin: 0px;
-	height: 10px;
+	height: 5px;
 	background-color: #5ba7b0;
 	border: 0;
+}
+
+nav{
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	font-family: 'Yantramanav', sans-serif;
+	font-weight: 700;
+	color: black;
 }
 
 #container{
