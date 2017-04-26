@@ -1,5 +1,18 @@
+html {
+	height: 100%;
+}
+
 body{
+	min-height: 100%;
+	display: flex;
 	margin: 0px;
+	flex-direction: column;
+}
+
+#page {
+	width: 1000px;
+	margin: auto;
+	flex: 1;
 }
 
 #header {
@@ -8,6 +21,7 @@ body{
 	background-image: url("images/header.jpg");
 	background-size: 100%;
 	margin: 0px;
+	width: 100%
 }
 
 #header img {
@@ -23,8 +37,14 @@ hr{
 	border: 0;
 }
 
+#globalNav {
+	width: 1000px;
+	margin: auto;
+}
+
 nav{
 	width: 100%;
+	text-align: center;
 }
 
 a {
@@ -32,6 +52,18 @@ a {
 	font-family: 'Yantramanav', sans-serif;
 	font-weight: 700;
 	color: black;
+	font-size: 22px;
+	transition: color 0.25s ease;
+}
+
+a:hover {
+	color: #5ba7b0;
+}
+
+.navigation {
+	display: inline;
+	padding-right: 30%;
+	padding-top: 5px;
 }
 
 #container{
@@ -40,33 +72,47 @@ a {
 }
 
 .content {
-	margin: 35px;
+	margin-top: 32px;
+}
+
+.content:first-child {
+	width: 655px;
+	float: left;
+}
+.content:nth-child(2){
+	float: right;
+	margin-left: 15px;
+	width: 320px;
+}
+
+.content:nth-child(3){
+	float: right;
+	margin-left: 15px;
+	width: 320px;
 }
 
 .content h1 {
-	font-family: 'Hammersmith One', sans-serif;
+	font-family: 'Crimson Text', serif;
 	color: #5ba7b0;
-	font-size: 3em;
-	letter-spacing: .10em;
-	font-weight: normal;
+	font-size: 50px;
+	font-weight: 700;
 	margin: 0px;
 }
 
 .content p {
-	font-family: 'Droid Serif', serif;
+	font-family: 'Yantramanav', sans-serif;
 	margin: 0px;
+	font-weight: 300px;
 }
 
 .vid {
-	width: 45%;
-	float: left;
-	margin: 5px;
+	width: 655px;
 }
 
 .videoWrapper {
 	position: relative;
-	padding-bottom: 50%; /* 16:9 */
-	padding-top: 25px;
+	padding-bottom: 55%; /* 16:9 */
+	padding-top: 12px;
 	height: 0;
 }
 .videoWrapper iframe {
@@ -79,6 +125,37 @@ a {
 
 .clearfloat {
 	clear: both;
+}
+
+
+footer {
+	margin-top: 30px;
+	height: 55px;
+}
+
+footer div {
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	width: 320px;
+}
+
+footer div img {
+	height: 35px;
+}
+
+/*footer div img:first-child {
+	margin-left: 0px;
+}
+
+footer div img:nth-child(5) {
+	margin-right: 0px;
+}*/
+
+footer p{
+	width: 320px;
+	text-align: center;
+	margin: auto;
 }
 
 #gallery {
