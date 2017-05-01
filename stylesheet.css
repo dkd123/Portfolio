@@ -10,7 +10,7 @@ body{
 }
 
 #page {
-	width: 1000px;
+	width: 1070px;
 	margin: auto;
 	flex: 1;
 }
@@ -43,8 +43,11 @@ hr{
 }
 
 nav{
-	width: 100%;
 	text-align: center;
+	margin: auto;
+	margin-top: 10px;
+	width: 100%;
+	padding-left: 5%;
 }
 
 a {
@@ -54,6 +57,7 @@ a {
 	color: black;
 	font-size: 22px;
 	transition: color 0.25s ease;
+	padding-right: 10%;
 }
 
 a:hover {
@@ -62,12 +66,11 @@ a:hover {
 
 .navigation {
 	display: inline;
-	padding-right: 30%;
+	padding-right: 20%;
 	padding-top: 5px;
 }
 
 #container{
-	max-width: 1070px;
 	margin: auto;
 }
 
@@ -76,19 +79,19 @@ a:hover {
 }
 
 .content:first-child {
-	width: 655px;
+	width: 693px;
 	float: left;
 }
 .content:nth-child(2){
 	float: right;
 	margin-left: 15px;
-	width: 320px;
+	width: 347px;
 }
 
 .content:nth-child(3){
 	float: right;
 	margin-left: 15px;
-	width: 320px;
+	width: 347px;
 }
 
 .content h1 {
@@ -106,7 +109,12 @@ a:hover {
 }
 
 .vid {
-	width: 655px;
+	width: 693px;
+}
+
+.vidGrid {
+	width: 100%;
+	display: inline-block;
 }
 
 .videoWrapper {
@@ -114,6 +122,7 @@ a:hover {
 	padding-bottom: 55%; /* 16:9 */
 	padding-top: 12px;
 	height: 0;
+	
 }
 .videoWrapper iframe {
 	position: absolute;
@@ -144,18 +153,11 @@ footer div img {
 	height: 35px;
 }
 
-/*footer div img:first-child {
-	margin-left: 0px;
-}
-
-footer div img:nth-child(5) {
-	margin-right: 0px;
-}*/
-
 footer p{
 	width: 320px;
 	text-align: center;
 	margin: auto;
+	font-family: 'Yantramanav', sans-serif;
 }
 
 #gallery {
@@ -166,6 +168,7 @@ footer p{
 	-moz-column-gap: 5px;
 	column-count: 3;
 	column-gap: 5px;
+	margin-top: 32px;
 }
 
 .galleryImage {
